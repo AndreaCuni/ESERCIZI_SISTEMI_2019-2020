@@ -16,6 +16,7 @@ def adj2Dict(m):
 def dict2Adj(d):
 
 #fare anche per non orientati pesati
+#fare disegno del grafo con networkX
 
 
 def main():
