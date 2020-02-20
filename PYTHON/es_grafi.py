@@ -1,16 +1,26 @@
-nodi = input("inserisci il numero di nodi")
+def user2Adj():
+    nodi = int(input("inserisci il numero di nodi"))
+    m = []
 
-m = [[]]
-provvisorio = []
+    for i in range(0,nodi):
+        arco = [int(n) for n in input(f"a quali altri nodi è collegato il nodo {i}:").split(",")]
+        colonne = [0 for n in range (0,nodi)]
+        for k in arco:
+            if (k != -1):
+                colonne.append(1)
+        m.append(colonne)
+    return m   
 
-for i in range(int(nodi)):
-    arco = input(f"a quali altri nodi è collegato il nodo {i}")
-    archi = arco.split(",")
-    for k in range(int(nodi)):
-        if (archi[k] == nodi[k]):
-            provvisorio.append(1)
-        else: 
-            provvisorio.append(0)
-    m.append(provvisorio)
+def adj2Dict(m):
 
-print(m)
+def dict2Adj(d):
+
+#fare anche per non orientati pesati
+
+
+def main():
+    matrix = []
+    matrix = user2Adj()
+
+if __name__ == "main":
+    main()
