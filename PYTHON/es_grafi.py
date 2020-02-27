@@ -12,13 +12,20 @@ def user2Adj():
     return m   
 
 def adj2Dict(m):
-    dictionary = {}
 
-    for n in len(m):
-        m[n] = dictionary[n]
+    dictionary = {}
+    for n in range(len(m)):
+        dictionary[n] = m[n]
+
+    print(dictionary)
 
 
 def dict2Adj(d):
+    matrix = []
+
+    for _, n in d.items():      #_, si utilizza per ignorare la prima parte d
+        matrix.append(n)
+    print(matrix)
 
 #fare anche per non orientati pesati
 #fare disegno del grafo con networkX
@@ -26,7 +33,9 @@ def dict2Adj(d):
 
 def main():
     matrix = []
+    dic = {}
     matrix = user2Adj()
+    matrix = dict2Adj(dic)
 
 if __name__ == "main":
     main()
