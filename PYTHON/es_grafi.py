@@ -12,6 +12,11 @@ def user2Adj():
     return m   
 
 def adj2Dict(m):
+    dictionary = {}
+
+    for n in len(m):
+        m[n] = dictionary[n]
+
 
 def dict2Adj(d):
 
