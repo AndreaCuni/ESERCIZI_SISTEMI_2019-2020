@@ -33,7 +33,7 @@ def user2DictPes():
     m = []
 
     for i in range(0,nodi):
-        arco = [int(n) for n in input(f"a quali altri nodi è collegato il nodo {i}:").split(",")]
+        arco = [int(n) for n in input(f"inserisci i collegamenti tra i nodi in ordine indicandone il peso, se il nodo non è collegato al nodo richiesto inserire 0 {i}:").split(",")]   #in questo caso la matrice sarà composta anche da 0, che indicano che il nodo non è collegato
         colonne = [0 for n in range (0,nodi)]
         for k in arco:
             if (k != -1):
